@@ -7,7 +7,8 @@ operation_list = [
     {'id': 615064591, 'state': 'CANCELED', 'date': '2018-10-14T08:21:33.419441'}
 ]
 
-def filter_by_state(operation_list: List[Dict[str, Any]], state: str = 'EXECUTED') -> list [Dict[str, Any]]:
+
+def filter_by_state(operation_list: List[Dict[str, Any]], state: str = 'EXECUTED') -> list[Dict[str, Any]]:
     """Функция сортировки по ключу state"""
     return list((item for item in operation_list if item.get('state') == state))
 
