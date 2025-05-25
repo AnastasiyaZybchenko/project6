@@ -14,6 +14,7 @@ def get_mask_card_number(card_number: list[str]) -> str:
             result.append("*")
         else:
             result.append(number)
+
     masked_card = "".join(result)
 
     masked_card_result = []
