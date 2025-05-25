@@ -14,14 +14,8 @@ def mask_account_card(number_card_or_account: str) -> str:
         return f"{card_name} {get_mask_card_number(card_number)}"
 
 
-print(mask_account_card('Visa Gold 5999414228426353'))
-
-
 def get_date(user_data: str) -> str:
     """Преобразование даты в формат ДД.ММ.ГГ"""
     data_obj = datetime.fromisoformat(user_data)
     formatted_data = data_obj.strftime("%d.%m.%Y")
     return formatted_data
-
-
-print(get_date('2024-03-11T02:26:18.671407'))
