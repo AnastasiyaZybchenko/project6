@@ -21,7 +21,7 @@ operation_list_number_card_or_account = [
 if __name__ == '__main__':
     print(src.processing.sort_by_date(operation_list))
     print(src.processing.filter_by_state(operation_list))
-    print(src.masks.get_mask_card_number(operation_list_number_card_or_account))
-    print(src.masks.get_mask_account(operation_list_number_card_or_account))
-    print(src.widget.mask_account_card(operation_list_number_card_or_account))
+    print(src.masks.get_mask_card_number(operation_list_number_card_or_account[0]))
+    print(src.masks.get_mask_account(operation_list_number_card_or_account[0]))
+    print(src.widget.mask_account_card(operation_list_number_card_or_account[0]))
     print(src.widget.get_date('2024-03-11T02:26:18.671407'))
