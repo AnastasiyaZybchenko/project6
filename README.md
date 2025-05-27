@@ -18,7 +18,14 @@ state и возвращает новый список словарей, соде
 state соответствует указанному значению.
 В этом же файле реализована функция сортировка даты по возрастанию.
 
+## Тестирование
 
+Тесты реализованы в пакете tests отдельными файлами:
+- [test_masks.py](tests/test_masks.py)
+- [test_widget.py](tests/test_widget.py)
+- [test_processing.py](tests/test_processing.py)
+
+Фикстура реализована в файле [conftest.py](tests/conftest.py)
 ## Лицензия:
 
 Этот проект лицензирован по [лицензии MIT](LICENSE)

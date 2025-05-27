@@ -1,4 +1,4 @@
-def get_mask_card_number(card_number: list[str]) -> str:
+def get_mask_card_number(card_number: str) -> str:
     """Функция маскировки банковской карты"""
 
     card_number = card_number.replace(" ", "")
@@ -27,7 +27,7 @@ def get_mask_card_number(card_number: list[str]) -> str:
     return masked_card_result_with_space
 
 
-def get_mask_account(card_account: list[str]) -> str:
+def get_mask_account(card_account: str) -> str:
     """Функция маскировки банковского счета"""
     card_account = card_account.replace(" ", "")
 
