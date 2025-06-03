@@ -108,4 +108,3 @@ if __name__ == '__main__':
     print(src.generators.filter_by_currency(t_transactions))
     print(next(src.generators.transaction_descriptions(t_transactions)))
     print(next(src.generators.card_number_generator(1, 9999999999999999)))
-    print(next(src.generators.card_number_generator(1, 9999999999999999)))
