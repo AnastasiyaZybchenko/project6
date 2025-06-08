@@ -2,6 +2,7 @@ import pytest
 
 from src.masks import get_mask_card_number, get_mask_account
 
+
 @pytest.mark.parametrize("data, result", [
     ("1596837868705199", "1596 83** **** 5199"),
     ("64686473678894779589", "Введен неверный номер карты"),

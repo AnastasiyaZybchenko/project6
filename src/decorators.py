@@ -1,7 +1,7 @@
 from functools import wraps
 
 
-def log(filename = None):
+def log(filename=None):
     """
     декоратор для логирования функций используется для:
     1) проверки входных данных

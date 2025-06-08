@@ -1,7 +1,4 @@
-import pytest
 from src.decorators import log
-
-
 
 
 def test_faulty_function_logs_error(capsys):
@@ -11,7 +8,6 @@ def test_faulty_function_logs_error(capsys):
     faulty_function(1, 1)
     captured = capsys.readouterr()
     assert 'faulty_function ok\n' in captured.out
-
 
     @log('mylog_test.txt')
     def my_fanc(x, y):
