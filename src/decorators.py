@@ -1,7 +1,7 @@
 from functools import wraps
 
 
-def log(filename = "logs.txt"):
+def log(filename = None):
     """
     декоратор для логирования функций используется для:
     1) проверки входных данных
@@ -14,7 +14,7 @@ def log(filename = "logs.txt"):
             try:
                 result = func(*args, **kwargs)
 
-                if filename == None or filename == "":
+                if not filename or filename == "":
                     print(f"{func.__name__} ok")
                 else:
                     with open("../logs/" + filename, "a") as file:
@@ -22,7 +22,7 @@ def log(filename = "logs.txt"):
             except Exception as e:
                 result = None
 
-                if filename == None or filename == "":
+                if not filename or filename == "":
                     print(f"{func.__name__} error: {e}. Inputs: {[*args]}{[*kwargs]}")
                 else:
                     with open("../logs/" + filename, "a") as file:
