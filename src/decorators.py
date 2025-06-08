@@ -2,11 +2,7 @@ from functools import wraps
 
 
 def log(filename=None):
-    """
-    декоратор для логирования функций используется для:
-    1) проверки входных данных
-    2) измерение времени работы декорируемой функции
-    """
+    """ Декоратор для логирования функции, ее результатов или возникшие ошибки """
 
     def decor(func):
         @wraps(func)
@@ -23,10 +19,10 @@ def log(filename=None):
                 result = None
 
                 if not filename or filename == "":
-                    print(f"{func.__name__} error: {e}. Inputs: {[*args]}{[*kwargs]}")
+                    print(f"{func.__name__} error: {e}. Inputs: {[list]}{[dict]}")
                 else:
                     with open("../logs/" + filename, "a") as file:
-                        file.write(f"{func.__name__} error: {e}. Inputs: {[*args]}{[*kwargs]}\n")
+                        file.write(f"{func.__name__} error: {e}. Inputs: {[list]}{[dict]}\n")
 
             return result
 
