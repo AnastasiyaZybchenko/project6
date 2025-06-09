@@ -19,10 +19,10 @@ def log(filename=None):
                 result = None
 
                 if not filename or filename == "":
-                    print(f"{func.__name__} error: {e}. Inputs: {[list]}{[dict]}")
+                    print(f"{func.__name__} error: {e}. Inputs: args={args}, kwargs={kwargs}")
                 else:
                     with open("../logs/" + filename, "a") as file:
-                        file.write(f"{func.__name__} error: {e}. Inputs: {[list]}{[dict]}\n")
+                        file.write(f"{func.__name__} error: {e}. Inputs: args={args}, kwargs={kwargs}\n")
 
             return result
 
