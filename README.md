@@ -24,6 +24,7 @@ state соответствует указанному значению.
 - [test_masks.py](tests/test_masks.py)
 - [test_widget.py](tests/test_widget.py)
 - [test_processing.py](tests/test_processing.py)
+- [test_generators.py](tests/test_generators.py)
 
 Фикстура реализована в файле [conftest.py](tests/conftest.py)
 ## Лицензия:
