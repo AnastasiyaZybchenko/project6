@@ -1,7 +1,8 @@
 from typing import Iterator
 
+
 def filter_by_currency(transactions, currency='USD') -> Iterator:
-    """ Функция фильтрации списка по валюте"""
+    """ Функция фильтрации списка по валюте """
     result = filter(lambda x: x["operationAmount"]["currency"]["code"] == currency, transactions)
     return result
 
@@ -12,7 +13,7 @@ def transaction_descriptions(transaction_list):
         yield transaction
 
 
-def  card_number_generator(start: int, end: int) -> Iterator[str]:
+def card_number_generator(start: int, end: int) -> Iterator[str]:
     """ Функция генерации банковских карт """
     for number in range(start, end + 1):
         card_number = f"{number:016d}"
