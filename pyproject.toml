@@ -27,4 +27,3 @@ black = "^25.1.0"
 
 [tool.poetry.group.dev.dependencies]
 pyt = "^1.0.5"
-
