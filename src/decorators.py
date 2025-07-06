@@ -21,7 +21,7 @@ def log(filename=None):
                 if not filename or filename == "":
                     print(f"{func.__name__} error: {e}. Inputs: args={args}, kwargs={kwargs}")
                 else:
-                    with open("../logs/" + filename, "a") as file:
+                    with open("./logs/" + filename, "a") as file:
                         file.write(f"{func.__name__} error: {e}. Inputs: args={args}, kwargs={kwargs}\n")
 
             return result

@@ -3,8 +3,8 @@ import pytest
 from src.generators import filter_by_currency, transaction_descriptions, card_number_generator
 
 
-def test_filter_by_currency_incorrect_currency(transactions_for_test):
-    filtered = filter_by_currency(transactions_for_test, 'EUR')
+def test_filter_by_currency_incorrect_currency(transactions):
+    filtered = filter_by_currency(transactions, 'EUR')
     with pytest.raises(StopIteration):
         next(filtered)
 

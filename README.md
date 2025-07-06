@@ -17,6 +17,7 @@ mypy = "^1.15.0"
 state и возвращает новый список словарей, содержащий только те словари, у которых ключ 
 state соответствует указанному значению.
 В этом же файле реализована функция сортировка даты по возрастанию.
+Реализованы функции чтения файла, обращения и вывода суммы транзакции.
 
 ## Тестирование
 
@@ -25,6 +26,8 @@ state соответствует указанному значению.
 - [test_widget.py](tests/test_widget.py)
 - [test_processing.py](tests/test_processing.py)
 - [test_generators.py](tests/test_generators.py)
+- [test_utils.py](tests/test_utils.py)
+- [test_external_api.py](tests/test_external_api.py)
 
 Фикстура реализована в файле [conftest.py](tests/conftest.py)
 ## Лицензия:

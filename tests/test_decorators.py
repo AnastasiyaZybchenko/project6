@@ -9,7 +9,7 @@ def test_faulty_function_logs_error(capsys):
     captured = capsys.readouterr()
     assert 'faulty_function ok\n' in captured.out
 
-    @log('mylog_test.txt')
+    @log('mylog_test.log')
     def my_fanc(x, y):
         return x + y
 
