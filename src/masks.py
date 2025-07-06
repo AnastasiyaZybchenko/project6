@@ -1,9 +1,9 @@
 import logging
+from config import LOGS_DIR
 
 logger = logging.getLogger("masks")
 logger.setLevel(logging.DEBUG)
-file_handler = logging.FileHandler(
-    "C:/Users/user/PycharmProjects/PythonProject6/logs/masks.log", encoding="utf-8", mode="w"
+file_handler = logging.FileHandler(os.path.join(LOGS_DIR,"masks.log"), encoding="utf-8", mode="w"
 )
 file_formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s: %(message)s")
 file_handler.setFormatter(file_formatter)
