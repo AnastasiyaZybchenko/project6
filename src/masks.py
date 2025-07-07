@@ -1,4 +1,6 @@
 import logging
+import os
+
 from config import LOGS_DIR
 
 logger = logging.getLogger("masks")

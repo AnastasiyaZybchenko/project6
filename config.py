@@ -5,6 +5,6 @@ ROOT_DIR = os.path.dirname(__file__)
 DATA_DIR = os.path.join(ROOT_DIR, 'data')
 LOGS_DIR = os.path.join(ROOT_DIR, 'logs')
 
-PATH_JSON = os.path.join(DATA_DIR, 'operation.json')
+PATH_JSON = os.path.join(DATA_DIR, 'operations.json')
 
 TEST_DATA = os.path.join(DATA_DIR, 'test_data.json')
